@@ -1,5 +1,5 @@
-import validator from "validator";
-import PhoneNumber from "awesome-phonenumber";
+const validator = require("validator");
+const PhoneNumber = require("awesome-phonenumber");
 
 const getUsername = (input) => {
   let username;

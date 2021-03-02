@@ -1,6 +1,6 @@
 {
   "name": "uniq-username",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate unique username from email, phone number or names",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/holumyn/uniq-username.git"
+  },
+  "dependencies": {
+    "validator": "^13.5.2",
+    "awesome-phonenumber": "^2.46.0"
   },
   "keywords": [
     "unique",
