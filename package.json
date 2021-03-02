@@ -18,8 +18,7 @@
     "unique",
     "username",
     "email",
-    "phone",
-    "number"
+    "phone number"
   ],
   "author": "Olumide Oduola",
   "license": "ISC",
