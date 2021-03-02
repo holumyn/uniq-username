@@ -1,0 +1,26 @@
+{
+  "name": "uniq-username",
+  "version": "0.0.1",
+  "description": "Generate unique username from email, phone number or names",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holumyn/uniq-username.git"
+  },
+  "keywords": [
+    "unique",
+    "username",
+    "email",
+    "phone",
+    "number"
+  ],
+  "author": "Olumide Oduola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holumyn/uniq-username/issues"
+  },
+  "homepage": "https://github.com/holumyn/uniq-username#readme"
+}
