@@ -3,7 +3,7 @@ const PhoneNumber = require("awesome-phonenumber");
 
 const getUsername = (input) => {
   let username;
-
+  input.toLowerCase();
   if (!input) {
     return undefined;
   }
@@ -15,7 +15,14 @@ const getUsername = (input) => {
     const pn = new PhoneNumber(input);
     countryCode = `+${pn.getCountryCode()}`;
     phoneNumber = pn.getNumber("significant");
+
+    if (!phoneNumber) {
+      return undefined;
+    }
     username = `${phoneNumber}-${Date.now()}`;
+  } else {
+    input.toString();
+    username = `${input.split(" ").join("-")}-${Date.now()}`;
   }
   return username;
 };
