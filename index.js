@@ -3,10 +3,10 @@ const PhoneNumber = require("awesome-phonenumber");
 
 const getUsername = (input) => {
   let username;
-  input.toLowerCase();
   if (!input) {
     return undefined;
   }
+  input.toLowerCase();
   const isEmail = validator.isEmail(input);
   if (isEmail) {
     email = input;
