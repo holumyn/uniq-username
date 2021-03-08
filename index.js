@@ -10,7 +10,8 @@ const getUsername = (input) => {
   const isEmail = validator.isEmail(input);
   if (isEmail) {
     email = input;
-    username = `${email.substring(0, email.indexOf("@"))}-${Date.now()}`;
+    const emailName = email.substring(0, email.indexOf("@"));
+    username = `${emailName.split(/[\s._]+/).join("-")}-${Date.now()}`;
   } else if (validator.isMobilePhone(input)) {
     const pn = new PhoneNumber(input);
     countryCode = `+${pn.getCountryCode()}`;
@@ -22,7 +23,7 @@ const getUsername = (input) => {
     username = `${phoneNumber}-${Date.now()}`;
   } else {
     input.toString();
-    username = `${input.split(" ").join("-")}-${Date.now()}`;
+    username = `${input.split(/[\s._]+/).join("-")}-${Date.now()}`;
   }
   return username;
 };

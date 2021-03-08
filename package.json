@@ -1,6 +1,6 @@
 {
   "name": "uniq-username",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate unique username from email, phone number or names",
   "main": "index.js",
   "scripts": {
