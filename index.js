@@ -1,12 +1,12 @@
 const validator = require("validator");
 const PhoneNumber = require("awesome-phonenumber");
 
-const getUsername = (input) => {
+const getUsername = (str) => {
   let username;
-  if (!input) {
+  if (!str) {
     return undefined;
   }
-  input.toLowerCase();
+  let input = str.toLowerCase();
   const isEmail = validator.isEmail(input);
   if (isEmail) {
     email = input;
